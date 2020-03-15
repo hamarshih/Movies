@@ -310,4 +310,4 @@ app.delete('/api/student', async (req, res, next) => {
             res.json("Students data are deleted successfully");
         }
     });
-})
+});
