@@ -1,0 +1,22 @@
+html
+	head
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(rel='stylesheet' href='/assets/css/movies.css')
+	body
+		div.head-style
+			img(src="https://image.shutterstock.com/z/stock-vector-online-cinema-art-movie-watching-with-popcorn-d-glasses-and-film-strip-cinematography-concept-700366096.jpg" width="70px" height="70px" margin-top="50%")
+			a(href="http://localhost:3000") Link
+		.h2
+			h2
+				text These are the top movies of the month
+		.container
+			each item in movies
+				.movie-container
+					img(src=`https://image.tmdb.org/t/p/w500${item.poster_path}` style="width:100%")
+					div(style="text-align:center")=item.original_title
+		.paging
+			each val in [1, 2, 3, 4, 5, 6, 7, 8, 9]
+				if page__num==val
+					button( type="button" style="background-color:red")=val
+				else
+					a(href=`http://localhost:3000/movies?page=${val}`): button(type="submit")=val

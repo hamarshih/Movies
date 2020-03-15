@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: stretch;
+}
+
+.h2 {
+  text-align: center;
+  color: red;
+  background-color: skyblue;
+}
+
+.head-style {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: papayawhip;
+}
+
+.movie-container {
+  align-items: center;
+  width: 25%;
+  height: 50%;
+  margin-bottom: 20px;
+  color: black;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, black, red, yellow, blue, pink, white);
+}
+
+.paging {
+  display: flex-start;
+  justify-content: space-between;
+  text-align: center;
+  height: 30px;
+  width: 100%;
+}
+
+button {
+  width: 50px;
+  margin-right: 10px;
+}
+
+@media (max-width: 425px) {
+    .movie-container {
+        width:50%;
+    }
+}
+
+input {
+  width: 50px;
+  margin-right: 10;
+}

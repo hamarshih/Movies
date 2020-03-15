@@ -1,0 +1,22 @@
+html
+    header
+        link(rel='stylesheet' href='/assets/css/dataPage.css')
+        h1
+            div.dropdown
+                span Hover here to select the page 
+                .dropdown-content
+                    a(href='http://localhost:3000/modifying') Modifying Page 
+                    a(href='http://localhost:3000/students') Students Page
+
+    body
+        h2
+            text fill in here the number
+        form.data-page
+            div
+                input(type="text" placeholder="Enter the ID number")#id-num
+                input.radio(type="radio" ,name="rad1" ,value="get")
+                span= "Get Information"
+                input.radio(type="radio" name='rad1' ,value="delete")
+                span= "Delete Information"
+                input(type="submit" value="submit")
+        script(src='/assets/js/dataPage.js')

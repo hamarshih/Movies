@@ -1,0 +1,59 @@
+<html>
+<title style="color: palegoldenrod;">Login page></title>
+
+<body background="/home/test/Downloads/Log.jpg">
+    <div style="  height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: 50%;
+    margin-top: -50px;
+    color: white;">
+        <h3>Sign in here</h3>
+        <input type="text" id="text" width="20px" name="userName" placeholder="userName" style="margin-bottom: 5;">
+
+        <input type="password" width="20px" id="pass" name="password" placeholder="Password">
+        <button style="margin-top: 10;" id="button" name="button">Login</button>
+        <!-- <button name="btn2">btn</button>
+-->
+    </div>
+
+
+
+    <script>
+        document.getElementById("button").addEventListener("click", onlyLetters);
+        // const p = [1,2,3,4].map((number) => {
+        //     return {
+        //         name: number,
+        //         value: number * 2,
+        //     }
+        // });
+            // console.log(p)
+        function onlyLetters() {
+            const x = document.querySelector("#text").value;
+            const y = document.querySelector("#pass").value;
+            const letters = /^[A-Za-z]+$/;
+            const z = (x.match(letters) || [])[0];
+
+            if (z) {
+                approveStatus(x, y);
+            } else {
+                alert("name must only contain letters");
+            }
+
+            
+        }
+
+        function approveStatus(x, y) {
+            if (x == "ahmad" && y == "123") {
+                alert("name and password are correct");
+            } else {
+                alert("check your inputs");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

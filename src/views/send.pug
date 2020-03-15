@@ -1,0 +1,9 @@
+html
+    head
+        link(rel='stylesheet' href='/assets/css/send.css')
+    body
+        h2
+            div= movie.title 
+        img(src=`https://image.tmdb.org/t/p/w500${ movie.poster_path }` )
+        h2
+            span=movie.vote_average

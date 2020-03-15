@@ -1,0 +1,29 @@
+html
+    header
+        link(rel="stylesheet" href='/assets/css/modifying.css')
+        h1 
+            div.dropdown
+                span Hover here to select the page 
+                div.dropdown-content
+                    a(href='http://localhost:3000/modifying') Modifying Page
+                    a(href='http://localhost:3000/students') Students Page
+    body
+        h2
+            text fill in here the student's details
+        form.stu-info
+            input(type="text",placeholder="Enter the ID Number")#stu-id
+            br
+            input(type="text",placeholder="Enter the name of the student")#stu-name
+            br
+            input(type="text",placeholder="Enter the age of the student")#stu-age
+            br
+            input(type="text",placeholder="Enter name of the mother")#stu-mom
+            input(type="text",placeholder="Enter name of the father")#stu-dad
+            br
+            input.rad(type="radio", value='put' ,name='rad1')
+            span="Update a  Student"
+            input.rad(type="radio", value='post',name="rad1")
+            span="Insert New Student Data"
+            br
+            input(type="submit")
+        script(src='/assets/js/modifying.js')
