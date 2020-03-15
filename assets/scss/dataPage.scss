@@ -5,9 +5,6 @@ h1{
 }
 
 header {
-    border: double;
-    color: yellow;
-    background-color: darkslategray;
   }
   .dropdown span{
       margin-left: 3px;
@@ -43,4 +40,46 @@ header {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .drop-down__items-container {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+  }
+
+  .drop-down__item {
+    width: 160px;
+    text-align: center;
+    line-height: 50px;
+  }
+
+  .drop-down__items {
+    display: none;
+    position: absolute;
+    color: #000;
+    background-color: aqua;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+  }
+
+  .drop-down__title {
+    position: relative;
+
+    &:hover .drop-down__items {
+      display: block;
+    }
+  }
   
+}

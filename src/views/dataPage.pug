@@ -1,14 +1,35 @@
 html
     header
         link(rel='stylesheet' href='/assets/css/dataPage.css')
-        h1
-            div.dropdown
-                span Hover here to select the page 
-                .dropdown-content
-                    a(href='http://localhost:3000/modifying') Modifying Page 
-                    a(href='http://localhost:3000/students') Students Page
+        //- h1
+        //-     div.dropdown
+        //-         span Hover here to select the page 
+        //-         .dropdown-content
+        //-             a(href='http://localhost:3000/modifying') Modifying Page 
+        //-             a(href='http://localhost:3000/students') Students Page
 
     body
+        .header
+            img.logo(src="https://cdn.pixabay.com/photo/2014/11/30/14/11/kitty-551554__340.jpg")
+            .drop-down__items-container
+                .drop-down__item
+                    .drop-down__title items1
+                        ul.drop-down__items
+                            li item1
+                            li item2
+                            li here!!
+                .drop-down__item
+                    .drop-down__title items2
+                        ul.drop-down__items
+                            li item1
+                            li item2
+                            li item3
+                .drop-down__item
+                    .drop-down__title items3
+                        ul.drop-down__items
+                            li item1
+                            li item2
+                            li item3    
         h2
             text fill in here the number
         form.data-page
