@@ -4,8 +4,6 @@ h1{
     margin-left: $margin;
 }
 
-header {
-  }
   .dropdown span{
       margin-left: 3px;
       padding-bottom: 30px;
@@ -80,6 +78,20 @@ header {
     &:hover .drop-down__items {
       display: block;
     }
+  }  
+  li ul {
+    display:none;
+
+    
+  } 
+  li:hover ul {
+    display:block;
+    position: absolute;
+    color: #000;
+    background-color: aqua;
+    right: +100%;
+    transform: translatey(-50%);
+    margin: 0;
+    
   }
-  
 }
